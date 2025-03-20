@@ -7,7 +7,7 @@ export default function MyOrder() {
 
     const fetchMyOrder = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/auth/myOrderData", {
+            const response = await fetch("https://final-ey.onrender.com/api/auth/myOrderData", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: localStorage.getItem('userEmail') })
